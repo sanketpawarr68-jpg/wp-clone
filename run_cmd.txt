@@ -1,0 +1,46 @@
+
+# How to Run the WhatsApp Clone Project
+
+This project consists of a frontend (Vite + React) and a backend (Node.js + Socket.io).
+
+## Prerequisites
+
+- Node.js installed
+
+## Step 1: Run the Backend Server
+
+1. Open a terminal.
+2. Navigate to the `server` directory:
+   cd server
+3. Install dependencies (first time only):
+   npm install
+4. Start the server:
+   npm start
+   # or for development with auto-restart:
+   npm run dev
+
+The backend server will run on `http://localhost:3000` (or the port defined in `server/index.js`).
+
+## Step 2: Run the Frontend Application
+
+1. Open a new terminal.
+2. Navigate to the project root directory:
+   cd .. # if you are in the server folder
+   # otherwise, cd to the project root
+3. Install dependencies (first time only):
+   npm install
+4. Start the frontend development server:
+   npm run dev
+
+The frontend application will be available at `http://localhost:5173`.
+
+## Step 3: Start the Tunnel (for remote access/testing)
+
+This step is optional but useful for testing on mobile or other devices.
+
+1. Open a new terminal.
+2. Navigate to the project root directory.
+3. Run the tunnel script:
+   node start-tunnel.cjs
+
+This will generate a public URL that tunnels to your local frontend.
